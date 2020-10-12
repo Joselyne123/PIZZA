@@ -67,7 +67,7 @@ h1{
 }
 
 .home{
-    background-image: url(image/pizza1.jpg);
+    background-image: url(images/pizza1.jpg);
     height: 550px;
     padding-top: 0%;
     background-size: cover;
@@ -109,7 +109,7 @@ h1{
     
 }
 #first{
-    background-image: url(image/pizza8.jpg);
+    background-image: url(images/pizza8.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -126,7 +126,7 @@ h2{
     text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
-    background-image: url("image/pizza10.jpeg");
+    background-image: url("images/pizza10.jpeg");
     background-size: cover;
     
 }
