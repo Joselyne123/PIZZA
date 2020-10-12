@@ -22,4 +22,27 @@ $(document).ready(function(){
       return this.CostPerCrust+this.CostPerTopping+this.CostPerSize
     }
     //user interface logic
-    
+    $("#cost").click(function(event){
+        event.preventDefault();
+          var selectedCrust= $("#crust").val();
+          var selectedTopping= $("#topping").val();
+          var selectedSize= $("#size").val();
+          var numberOfPizza=$("#quantity").val();
+        
+        switch(selectedCrust){
+          case"Flat Bread":
+          var costOfCrust=300;
+          break;
+          case"Cracker":
+          var costOfCrust=250;
+          break;
+          case"Greek":
+          var costOfCrust=300;
+          break;
+          case"Focaccia":
+          var costOfCrust=350;
+          break;
+          case"Thin":
+          var costOfCrust=250;
+          break;
+        }
