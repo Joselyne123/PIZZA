@@ -65,3 +65,40 @@ h1{
     padding: 2%;
 
 }
+
+.home{
+    background-image: url(image/pizza1.jpg);
+    height: 550px;
+    padding-top: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.home h1{
+    padding-top: 200px;
+    background-color: transparent;
+    font-weight: bolder;
+
+}
+#image{
+    margin-right: 3%; 
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+#image{
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+#image image{
+    border-radius: 7px;
+}
+
+#image image:hover{
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+   
+}
