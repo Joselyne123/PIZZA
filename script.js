@@ -46,3 +46,33 @@ $(document).ready(function(){
           var costOfCrust=250;
           break;
         }
+
+        switch(selectedTopping){
+            case"Beef":
+            var costOfTopping=400;
+            break;
+            case"Sausage":
+            var costOfTopping=450;
+            break;
+            case"Ham":
+            var costOfTopping=450;
+            break;
+            case"Chicken":
+            var costOfTopping=500;
+            break;
+            case"Onions":
+            var costOfTopping=350;
+            break;
+          }
+          switch(selectedSize){
+            case"Small":
+            var costOfSize=700;
+            break;
+            case"Medium":
+            var costOfSize=1000;
+            break;
+            case"Large":
+            var costOfSize=1200;
+            break;
+          }
+            
