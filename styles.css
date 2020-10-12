@@ -120,4 +120,22 @@ h1{
 h2{
     text-align: center;
 }
- 
+#contactus{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-image: url("image/pizza10.jpeg");
+    background-size: cover;
+    
+}
+#contactus img{
+    object-fit: cover;
+    height: auto;
+}
+#fir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
