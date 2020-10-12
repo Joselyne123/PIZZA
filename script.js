@@ -75,4 +75,33 @@ $(document).ready(function(){
             var costOfSize=1200;
             break;
           }
-            
+    
+          var selectedPizzaCost=new PizzaCost(costOfCrust,costOfTopping,costOfSize);
+    var selectedPizza=new Pizza(selectedCrust,selectedTopping,selectedSize);
+    document.getElementById("priceOne").textContent =selectedPizzaCost.CostOfOne()+" Rwf.";
+    document.getElementById("seePrice").textContent = selectedPizzaCost.CostOfOne()*numberOfPizza+" Rwf.";
+  
+    document.getElementById("cru").textContent =selectedCrust;
+    document.getElementById("si").textContent =selectedSize;
+    document.getElementById("top").textContent =selectedTopping;
+    document.getElementById("nbr").textContent =numberOfPizza;
+    document.getElementById("cos").textContent = selectedPizzaCost.CostOfOne()*numberOfPizza+" Rwf.";
+  
+  $("#deliver").click(function(event){
+    event.preventDefault();
+    var location=prompt("Enter the location for deliver:");
+    alert("Your order will be delivered to "+location+", a delivery cost of 1000Rwf will be added to the total cost.");
+  });
+  $("#dontDeliver").click(function(event){
+    event.preventDefault();
+    alert("Make sure you pick your order!");
+  });
+    
+  });
+  $("#checkout").click(function(event){
+    event.preventDefault();
+
+    $("#summary").show();
+  }); 
+  
+});
